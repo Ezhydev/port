@@ -1,0 +1,63 @@
+/* Reset & dasar */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family:'Poppins',sans-serif; background:#f5f5f5; color:#333; scroll-behavior:smooth; transition:background 0.5s, color 0.5s;}
+
+/* main picture */
+.picture { margin: 8px; padding: 8px;}
+.main-pic { width: 300px; border-radius: 10px;}
+
+/* header */
+.header {height: 55vh; display: flex; justify-content: center; align-items: center; text-align: center; position: relative; overflow: hidden;}
+.header-bg {position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-bg.jpg') center/cover no-repeat; z-index:1; will-change:transform;}
+.header-content {position:relative; z-index:2; color:white;}
+.header-content h1 {font-size:3em; margin-bottom:10px;}
+.header-content p {font-size:1.5em; margin-bottom:20px;}
+
+/* Social Icons */
+.social-icons {margin-top:15px;}
+.social-icons a {margin:0 10px; font-size:1.5em; color:white; transition:0.3s;}
+.social-icons a:hover {transform:scale(1.3);}
+
+/* Sections */
+section {padding:60px 20px; text-align:center;}
+
+/* Tentang Saya */
+.about-container {display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:20px; margin-top:20px;}
+.about-photo {width:200px; border-radius:10px;}
+
+/* Skills */
+.skills-container {display:flex; flex-direction:column; gap:15px; max-width:600px; margin:20px auto;}
+.skill p {margin-bottom:5px; font-weight:bold;}
+.skill-bar {width:100%; background:#ddd; height:20px; border-radius:10px; overflow:hidden;}
+.skill-bar div {height:100%; background:#3498db; width:0%; transition:width 1.5s ease-in-out; border-radius:10px;}
+
+/* Case Studies */
+.case-list {display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:20px;}
+.case-card {background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); width:250px; transition:0.3s;}
+.case-card:hover {transform:translateY(-5px); box-shadow:0 5px 20px rgba(0,0,0,0.2);}
+
+/* Testimonials */
+.testimonials-container {display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:20px;}
+.testimonial {background:#fff; padding:20px; border-radius:10px; width:250px; box-shadow:0 0 10px rgba(0,0,0,0.1); transition:0.3s;}
+.testimonial:hover {transform:translateY(-5px); box-shadow:0 5px 20px rgba(0,0,0,0.2);}
+.downloadS {background-color: #d41d1d; padding: 5px; margin: 5px; }
+.downloadS:hover {background-color: #3b3737e9; color: #fff;}
+
+/* Dark Mode */
+body.dark-mode {background:#111; color:#f5f5f5;}
+body.dark-mode .overlay {background:rgba(52,152,219,0.9);}
+body.dark-mode .modal-content {background:#222; color:#f5f5f5;}
+
+/* Fade-in */
+.fade {opacity:0; transform:translateY(20px); transition:opacity 1s ease-out, transform 1s ease-out;}
+.fade.show {opacity:1; transform:translateY(0);}
+
+
+/* footer */
+footer {text-align: center; padding: 10px; background: #f1f1f1; font-size: 14px; color: #555; position: fixed; bottom: 0; left: 0; width: 100%;}
+
+
+
+
+
+
