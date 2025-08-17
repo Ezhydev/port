@@ -27,6 +27,7 @@ faders.forEach(fader => appearOnScroll.observe(fader));
 // Dark/Light toggle
 document.getElementById('themeToggle').addEventListener('click', ()=>{
     document.body.classList.toggle('dark-mode');
+    document.footer.classList.toggle('dark-mode');
 });
 
 // Animate skill bars
@@ -51,7 +52,6 @@ window.addEventListener('load', ()=>{
 });
 
 //pindah halaman project
-
 const buttonD1 = document.getElementById('buttonD1');
 const buttonD2 = document.getElementById('buttonD2');
 const buttonD3 = document.getElementById('buttonD3');
@@ -68,3 +68,43 @@ buttonD3.addEventListener("click", () => {
     window.location.href = "https://rekomendasi-anime.vercel.app/";
 })
 
+//music button
+//music 1 (to the bone)
+const music = document.getElementById("music");
+const btn = document.getElementById("playPauseBtn");
+
+    btn.addEventListener("click", () => {
+      if (music.paused) {
+        music.play();
+        btn.textContent = "⏸";
+      } else {
+        music.pause();
+        btn.textContent = "▶️";
+      }
+    });
+//music 2 (memories)
+const music2 = document.getElementById("music2");
+const btn2 = document.getElementById("playPauseBtn2");
+
+    btn2.addEventListener("click", () => {
+      if (music2.paused) {
+        music2.play();
+        btn2.textContent = "⏸";
+      } else {
+        music2.pause();
+        btn2.textContent = "▶️";
+      }
+    });
+//music 3 (enchanted)
+const music3 = document.getElementById("music3");
+const btn3 = document.getElementById("playPauseBtn3");
+
+    btn3.addEventListener("click", () => {
+      if (music3.paused) {
+        music3.play();
+        btn3.textContent = "⏸";
+      } else {
+        music3.pause();
+        btn3.textContent = "▶️";
+      }
+    });
